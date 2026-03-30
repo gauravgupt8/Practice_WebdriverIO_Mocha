@@ -1,0 +1,43 @@
+{
+  "name": "practice_webdriverio_mocha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serenity": "failsafe serenity:clean wdio serenity:report",
+    "serenity:clean": "rimraf target",
+    "wdio": "wdio run ./wdio.conf.js",
+    "serenity:report": "serenity-bdd run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gauravgupt8/Practice_WebdriverIO_Mocha.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/gauravgupt8/Practice_WebdriverIO_Mocha/issues"
+  },
+  "homepage": "https://github.com/gauravgupt8/Practice_WebdriverIO_Mocha#readme",
+  "devDependencies": {
+    "@serenity-js/assertions": "^3.42.0",
+    "@serenity-js/console-reporter": "^3.42.0",
+    "@serenity-js/core": "^3.42.0",
+    "@serenity-js/mocha": "^3.42.0",
+    "@serenity-js/rest": "^3.42.0",
+    "@serenity-js/serenity-bdd": "^3.42.0",
+    "@serenity-js/web": "^3.42.0",
+    "@serenity-js/webdriverio": "^3.42.0",
+    "@wdio/allure-reporter": "^9.27.0",
+    "@wdio/cli": "^9.27.0",
+    "@wdio/junit-reporter": "^9.27.0",
+    "@wdio/local-runner": "^9.27.0",
+    "@wdio/spec-reporter": "^9.27.0",
+    "mocha": "^11.7.5",
+    "npm-failsafe": "^1.4.0",
+    "rimraf": "^6.1.3"
+  }
+}
